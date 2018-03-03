@@ -5,8 +5,8 @@ target_url = "https://www.youtube.com/watch?v=XQgXKtPSzUI"
 
 uClient = ureq(target_url)
 html = uClient.read()
-uClinet.close()
+uClient.close()
 
 page_soup = bs(html, "html.parser")
 
-print(page_soup.h1)
+print(page_soup.body)
